@@ -1,0 +1,55 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Arial", "Meiryo", "sans-serif"; 
+}
+
+body a {
+    color: #868686;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: #1e70ab;
+}
+
+#navigation {
+    position: relative;
+    background-color: #fff;
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.26);
+}
+
+#navigation ul {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navigation ul li {
+    list-style-type: none;
+}
+
+#navigation ul li a {
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+#navigation ul li.selected a {
+    color: #000;
+}
+
+#navigation .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #000;
+    /* Ensure transition works in Safari */
+    -webkit-transition: all 0.3s ease;
+    -webkit-transition-property: width, left;
+    transition: all 0.3s ease;
+    transition-property:  width, left;
+}
